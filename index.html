@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f2"><meta name="description" content="An interactive ASN.1 seminar for computer science students, based on section 9.3 of Computer Networks: A Top-Down Approach.">
+  <title>ASN.1 / A language for data</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="fonts/fonts.css"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#slide">Skip to lesson</a>
+  <header class="topbar">
+    <a class="brand" href="#slide-1" aria-label="ASN.1 seminar home"><span class="brand-symbol">a<span>1</span></span><span>ASN.1 <small>THE INTERACTIVE SEMINAR</small></span></a>
+    <nav aria-label="Seminar tools"><button id="overview" class="plain">Chapters <span class="key">G</span></button><button id="notes-toggle" class="plain" aria-pressed="false">Notes <span class="key">N</span></button><button id="present" class="primary">Present <span aria-hidden="true">↗</span></button></nav>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar"><div class="course-label">COMPUTER NETWORKS <span>09.3</span></div><h2>A language<br>for data.</h2><p class="sidebar-intro">From an idea to a message<br>every machine can understand.</p><nav id="chapter-nav" aria-label="Lesson chapters"></nav><div class="source-note"><span>YOUR TEXTBOOK, EXPLAINED</span><p>Section 9.3 · pp. 722–726<br>Computer Networks:<br>A Top-Down Approach</p><button id="sources" class="source-link">View sources & scope ↗</button></div></aside>
+    <main id="main"><div class="lesson-meta"><span id="chapter-label">01 / THE BIG IDEA</span><span id="duration">ASN.1 · SECTION 9.3</span></div><article id="slide" tabindex="-1" aria-label="Current seminar slide"></article><aside id="teaching-notes" hidden><div><strong>Teaching notes</strong><span id="note-time"></span></div><p id="note-text"></p></aside></main>
+  </div>
+  <footer class="controls"><div class="control-left"><button id="motion" class="icon-button" aria-label="Pause diagram animations" title="Pause diagram animations">Ⅱ</button><button id="autoplay" class="plain" aria-pressed="false">Auto-play</button><span class="shortcut-hint">Use <kbd>←</kbd> <kbd>→</kbd> to navigate</span></div><div class="slide-progress"><span id="slide-count">01 / 20</span><div id="progress-dots" aria-label="Slide navigation"></div></div><div class="control-right"><button id="previous" class="icon-button" aria-label="Previous slide">←</button><button id="next" class="primary">Next slide <span aria-hidden="true">→</span></button><button id="fullscreen" class="icon-button" aria-label="Toggle fullscreen" title="Fullscreen (F)">⛶</button></div></footer>
+  <dialog id="overview-dialog"><div class="dialog-top"><div><span class="eyebrow">THE LEARNING JOURNEY</span><h2>Choose a slide.</h2></div><button class="icon-button" data-close aria-label="Close chapters">×</button></div><div id="overview-grid"></div></dialog>
+  <dialog id="sources-dialog"><div class="dialog-top"><h2>Built from your textbook.</h2><button class="icon-button" data-close aria-label="Close sources">×</button></div><div class="source-content"><p>The core lesson follows <strong>section 9.3, printed pages 722–726</strong> of the supplied <em>Computer Networks: A Top-Down Approach</em> extract. Figures are original teaching diagrams; textbook examples 9.6–9.8 and figure 9.23 are adapted and attributed on the relevant slides.</p><p>The main lesson covers ASN.1 only. Encoding is introduced briefly as in section 9.3.3, without a separate BER lesson. The final appendix answers P9-17, P9-18, P9-20, and P9-21, the problems explicitly requesting ASN.1 definitions. Their referenced figures are outside this extract, so field layouts are supplemented using RFC 1157 and RFC 1155; the community-based message answer is labeled accordingly.</p><a id="textbook-link" target="_blank" rel="noopener">Open supplied textbook PDF ↗</a><a href="https://www.itu.int/rec/T-REC-X.680" target="_blank" rel="noopener">ITU-T X.680: ASN.1 notation ↗</a><a href="https://www.rfc-editor.org/rfc/rfc1157" target="_blank" rel="noopener">RFC 1157: standard ASN.1 structures for appendix answers ↗</a><a href="https://www.rfc-editor.org/rfc/rfc1155" target="_blank" rel="noopener">RFC 1155: imported object types ↗</a><a href="https://www.itu.int/rec/T-REC-X.690/" target="_blank" rel="noopener">ITU-T X.690: BER encoding rules ↗</a><h3>Design inspiration</h3><p>Step-through networking explanations from <a href="https://net-seal.github.io/" target="_blank" rel="noopener">NET-SEAL</a> and the experimental learning tools in <a href="https://dpnkrpl.github.io/netviz/" target="_blank" rel="noopener">NetViz</a>. No assets or source code copied.</p><button class="primary" id="print">Print lesson / save PDF ↗</button></div></dialog>
+  <button id="edge-previous" class="edge-nav edge-left" hidden aria-label="Previous slide" title="Previous slide"></button>
+  <button id="edge-next" class="edge-nav edge-right" hidden aria-label="Next slide" title="Next slide"></button>
+  <div id="toast" role="status" aria-live="polite"></div><div id="print-deck" aria-hidden="true"></div>
+  <script src="app.js"></script>
+</body></html>
